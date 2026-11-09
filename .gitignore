@@ -1,0 +1,13 @@
+out/
+inputs/
+private/
+*.bin
+*.raw
+*.dtb
+*.ko
+*.key
+*.pem
+*.gpr
+*.rep/
+.env
+__pycache__/

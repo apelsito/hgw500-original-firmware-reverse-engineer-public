@@ -1,0 +1,80 @@
+{
+  "source_evidence_sha256": "5289261473f9da9321360ec50dcca0463621015968467b279e8017c554448a3f",
+  "provider": {
+    "id": "unblob",
+    "name": "Unblob",
+    "version": "26.6.4"
+  },
+  "engine": {
+    "name": "unblob",
+    "version": "26.6.4",
+    "executable_sha256": "a1de6cbe4caeffeb494924eb6efccadf7617a6038a4e5cac34f3f4ae5eaa6d8b",
+    "worker_count": 1
+  },
+  "selection": {
+    "offset": 0,
+    "length": 6729728,
+    "sha256": "f39ed40cc66010287574bdc41c9fc18a6ba7d674f7c0acd7d7d47f8ab633a42f"
+  },
+  "coverage": "partial",
+  "total_regular_files": 7,
+  "excluded_private_path_count": 0,
+  "files": [
+    {
+      "relative_path": "firmware.bin_extract/0-8192.unknown",
+      "size": 8192,
+      "sha256": "832f61859b7bc36de2a9e5bbf8ba2aa3acc6307e97f73fd3013298466f195c70",
+      "analysis_depth": null,
+      "original_file_range": null
+    },
+    {
+      "relative_path": "firmware.bin_extract/1188509-1245184.padding",
+      "size": 56675,
+      "sha256": "929486b09d82b7e0d3a02b82004ee5c7344e90c6d3ee8708ed804512cf0f53cf",
+      "analysis_depth": null,
+      "original_file_range": null
+    },
+    {
+      "relative_path": "firmware.bin_extract/1245184-6729728.squashfs_v4_le",
+      "size": 5484544,
+      "sha256": "5f62acc8f9928b27b2ab5a28e0711eeb9cdd68076caa9bcdf73f8d3afa172d59",
+      "analysis_depth": null,
+      "original_file_range": null
+    },
+    {
+      "relative_path": "firmware.bin_extract/8192-1188509.lzma_extract/lzma.uncompressed",
+      "size": 3750104,
+      "sha256": "139ee3f292553ea2c3e6bd96fdeb3943246849b9cb1deda2f3f0824c59f11686",
+      "analysis_depth": 1,
+      "original_file_range": null
+    },
+    {
+      "relative_path": "firmware.bin_extract/8192-1188509.lzma_extract/lzma.uncompressed_extract/0-2471444.unknown",
+      "size": 2471444,
+      "sha256": "bba9d4c194c84e61c32798433cebe742328b98780ae2e8baf716bd39d44e2316",
+      "analysis_depth": null,
+      "original_file_range": null
+    },
+    {
+      "relative_path": "firmware.bin_extract/8192-1188509.lzma_extract/lzma.uncompressed_extract/2471444-2478405.gzip_extract/gzip.uncompressed",
+      "size": 27166,
+      "sha256": "38ceefd183703beb82e7f8de915082c19fd0febc89c5ee9b92a3ffd3ee4e9ea2",
+      "analysis_depth": null,
+      "original_file_range": null
+    },
+    {
+      "relative_path": "firmware.bin_extract/8192-1188509.lzma_extract/lzma.uncompressed_extract/2478405-3750104.unknown",
+      "size": 1271699,
+      "sha256": "1b9ea43a849a7330a8624a7c238e97ef7f4b4c30f6226ff879c9cbab6582de40",
+      "analysis_depth": null,
+      "original_file_range": null
+    }
+  ],
+  "limitations": [
+    "Signature matches and reported sizes do not establish partition validity, encryption or runtime mappings. Binwalk may infer unknown lengths before emitting its report.",
+    "Only Linux is supported by this integration. One worker, inherited per-process address-space/file-size/CPU limits and a deadline constrain execution; staging byte and entry budgets are polled and may transiently overshoot. Limits are not aggregate process-memory or filesystem quotas.",
+    "Unblob's default sandbox and skip rules remain enabled. Missing external extractors, unknown chunks, encrypted chunks and depth limits yield partial coverage. Extracted code is never executed; only regular files are published, without executable permission bits.",
+    "extraction_gaps lists regions that were carved or left unextracted and names extractor dependencies the producer reported as missing. A listed gap does not mean the target is corrupt or that a retained region is empty.",
+    "The actual launcher executable is hashed. Interpreter, shared libraries and installed Python package dependencies are not independently attested; source revision remains unknown for caller-supplied builds."
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "schema": "openmitrastar.ras-analysis/v1",
+  "bytes": 6729728,
+  "sha256": "f39ed40cc66010287574bdc41c9fc18a6ba7d674f7c0acd7d7d47f8ab633a42f",
+  "header": {
+    "magic": "0x27051956",
+    "header_bytes": 64,
+    "header_area_bytes": 8192,
+    "timestamp": 1494839339,
+    "payload_bytes": 6721536,
+    "load": "0x8493a000",
+    "entry": "0x8493a000",
+    "os": 5,
+    "arch": 19,
+    "type": 2,
+    "compression": 3,
+    "name": "topaz-linux",
+    "header_crc32_valid": true,
+    "payload_crc32_valid": true
+  },
+  "payload_sha256": "625750db8116064ab00861da1a07235ba845aa8a65345f7d48b01d65f4704194",
+  "trailing_bytes": 0,
+  "squashfs_candidates_in_file": [
+    {
+      "offset": 1245184,
+      "inodes": 1114,
+      "block_size": 524288,
+      "compression_id": 2,
+      "version": "4.0",
+      "bytes_used": 5481061,
+      "fits_input": true
+    }
+  ],
+  "hardware_accessed": false,
+  "lzma": {
+    "dictionary_bytes": 33554432,
+    "declared_uncompressed_bytes": 3750104,
+    "decompressed_bytes": 3750104,
+    "decompressed_sha256": "139ee3f292553ea2c3e6bd96fdeb3943246849b9cb1deda2f3f0824c59f11686",
+    "unused_compressed_input_bytes": 5541219
+  },
+  "newc_inventory": null,
+  "squashfs_candidates_in_decompressed_payload": []
+}

@@ -1,0 +1,376 @@
+{
+  "source_repository": "apelsito/hgw500-original-firmware-reverse-engineer",
+  "source_commit": "be38e9fdf7737a65d272cf83d72c819d2628e89c",
+  "source_default_branch": "main",
+  "files_prepared": 69,
+  "normalized_files": [],
+  "excluded": [
+    {
+      "path": "AGENTS.md",
+      "reason": "Private authoring instructions"
+    }
+  ],
+  "status": "PUBLIC_SOURCE_SNAPSHOT",
+  "note": "Historical/private verification receipts remain historical. This candidate is not an exact preservation clone and does not imply a new firmware build or physical acceptance.",
+  "public_repository": "apelsito/hgw500-original-firmware-reverse-engineer-public",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 9,
+      "sha256": "8b9c3028d6467ff3be7c793141927841d70f47f52d0590677438f488ca154992"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 101,
+      "sha256": "5a5ade6c7c29cfa91120a77e9dca8c495db5f26937b60635e0761daed85d6466"
+    },
+    {
+      "path": "COPYING.GPL-2.0",
+      "bytes": 18600,
+      "sha256": "8780e78a1a737e127f25a65f6d95269bffd36158dc261114de7859b490bfc5aa"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3689,
+      "sha256": "ffdc4fc922fd05d3737c7c658d8b3acf2d77e68536ceb9618e3d7c9a247564d3"
+    },
+    {
+      "path": "analysis/artifact-manifest.json",
+      "bytes": 10503,
+      "sha256": "8dac1d79397755e60858ba39ff0dc54d92c2147b0efe71ae5d3217dfbd1e5661"
+    },
+    {
+      "path": "analysis/ras-structure.json",
+      "bytes": 1284,
+      "sha256": "1a6d3ee369fea35ff46cbe7baefe7e0a0a1a1454cb16220a1f27da5e99896836"
+    },
+    {
+      "path": "analysis/rea-entropy.json",
+      "bytes": 138680,
+      "sha256": "4da158957beddde3a8ebf7b637ab1c96552ee321bd2bb1a8c8ea814163b8d2d1"
+    },
+    {
+      "path": "analysis/rea-extraction.json",
+      "bytes": 3781,
+      "sha256": "929fffa29abaac266ae54cbf0358f290d8e65726b363da8a830df5fa8472ff2b"
+    },
+    {
+      "path": "analysis/rea-summary.json",
+      "bytes": 2323,
+      "sha256": "2374e33fb18e293e8cab7751c7cf523b0d810f14f894faf72b0bd52454f9b97c"
+    },
+    {
+      "path": "analysis/rootfs-script-export.json",
+      "bytes": 268,
+      "sha256": "c48d2e8500fb9d4332a5732acce5347d170f24585e239b433289f4d112550959"
+    },
+    {
+      "path": "analysis/source-manifest.json",
+      "bytes": 11617,
+      "sha256": "e74daa6b9b8dc4a84509eba22844606bc38771a0e8f9e398343948f6d4c4c3e3"
+    },
+    {
+      "path": "docs/CHECKOUT_AVAILABILITY.md",
+      "bytes": 1590,
+      "sha256": "a3de1f0c678524ad4f8cc863885fc0aafe04e15eed517c6056d874383da19f86"
+    },
+    {
+      "path": "docs/FIRMWARE_MAP.md",
+      "bytes": 5230,
+      "sha256": "87f6112065c9181f3be9f1cf59393c88fc1863b1d90a8faac7487d3b27f5e77c"
+    },
+    {
+      "path": "docs/HARDWARE_ARCHITECTURE.md",
+      "bytes": 4266,
+      "sha256": "c97392f0ffb088c45b895f1cb1d43cd6fea3ea3dfd02e3494134a52de448a80d"
+    },
+    {
+      "path": "docs/PROJECT_HANDOFF.md",
+      "bytes": 3012,
+      "sha256": "03b2e64f93d5443674b46da2730caca7d88d64fafcc893bf79623c3081ef9499"
+    },
+    {
+      "path": "docs/PUBLIC_SNAPSHOT.md",
+      "bytes": 2040,
+      "sha256": "08f2e1a924bbb41ddf0820adaf34abed9e95a844f3ddfa3bae6adc40e6cf16c7"
+    },
+    {
+      "path": "docs/REFERENCE_NOTES.md",
+      "bytes": 5160,
+      "sha256": "8814a608ea95717d98e0499e455ea811f4e83a195fd4a8b5f34aef01acfe5d3d"
+    },
+    {
+      "path": "docs/REPOSITORY_MAP.md",
+      "bytes": 2025,
+      "sha256": "eb0dae141c54a12b664b9aa25f37511f28dc9e4b442558ba51bc30ddaa4551ec"
+    },
+    {
+      "path": "docs/SYSTEM_ARCHITECTURE.md",
+      "bytes": 3289,
+      "sha256": "410c13e9c8c874fdb9e40e0c32082d84963c18abe659ba23494a467458ca026c"
+    },
+    {
+      "path": "docs/firmware-inventory.json",
+      "bytes": 7954,
+      "sha256": "2176eeb3c3d5d0011c8c23f257bca8391f37634043646e318089967231b52d56"
+    },
+    {
+      "path": "docs/hardware/evidence.json",
+      "bytes": 6456,
+      "sha256": "fa00f97fd2d5741dcded56a8d1bb3e7a8d6f918f795404c0e9c6ad66bf43c498"
+    },
+    {
+      "path": "docs/hardware/hgw500-processing-architecture.mmd",
+      "bytes": 583,
+      "sha256": "6be54674e256e7bd5af20070e2c49cfae077f10734b52354e7976567721ee8e6"
+    },
+    {
+      "path": "docs/hardware/hgw500-processing-architecture.png",
+      "bytes": 157066,
+      "sha256": "9b11049483af6b9823a7d27847e077bd584375a4d6f14319b597c788a6f48ab7"
+    },
+    {
+      "path": "source/oem-kernel.config.sanitized",
+      "bytes": 27166,
+      "sha256": "38ceefd183703beb82e7f8de915082c19fd0febc89c5ee9b92a3ffd3ee4e9ea2"
+    },
+    {
+      "path": "source/oem-rootfs-scripts/etc/init.d/S09qproc_mon",
+      "bytes": 189,
+      "sha256": "78b4a782cc33498e8569a44c7d8f0bfc2ee167237910b1899121e3469cee1269"
+    },
+    {
+      "path": "source/oem-rootfs-scripts/etc/init.d/S10coredump",
+      "bytes": 340,
+      "sha256": "e0081fed0896ec309ce661fc1a2c1d54104ab59c34c35acb044f8ac23995b3b1"
+    },
+    {
+      "path": "source/oem-rootfs-scripts/etc/init.d/S20urandom",
+      "bytes": 1365,
+      "sha256": "4cca0e403bf60cdb86e138a2e955a69832917cda4fa994903ad11a5e41129a36"
+    },
+    {
+      "path": "source/oem-rootfs-scripts/etc/init.d/S30procsys",
+      "bytes": 1577,
+      "sha256": "71d037606bdc5af6f8a8df1c3afe68e787e3fd39799c02f187a0a086ed57ddf8"
+    },
+    {
+      "path": "source/oem-rootfs-scripts/etc/init.d/S39date",
+      "bytes": 31,
+      "sha256": "2c6f24e102b83d4ce253234ac3a777dd70d6271110fa0c3933e58c6f03201536"
+    },
+    {
+      "path": "source/oem-rootfs-scripts/etc/init.d/S40jffs",
+      "bytes": 745,
+      "sha256": "1fc887f0b37d8ff2b201671326f6af2947408116a910e9122bf545c224ce119c"
+    },
+    {
+      "path": "source/oem-rootfs-scripts/etc/init.d/S41qevt",
+      "bytes": 1301,
+      "sha256": "95cf8e51bcb186c2a2ad1a25ebe69db712a0bd62daf320dc83733aab754660ff"
+    },
+    {
+      "path": "source/oem-rootfs-scripts/etc/init.d/S42inetd",
+      "bytes": 833,
+      "sha256": "6580ad5fa1e112084c6a7d765bbbcead9952d104f9de1db2f09ddcdbc13edff4"
+    },
+    {
+      "path": "source/oem-rootfs-scripts/etc/init.d/S50PCIe",
+      "bytes": 1587,
+      "sha256": "def3e0c3e544e20a2fa6d36b9115b3251bc43ece7a03f7af84c007537b053c7b"
+    },
+    {
+      "path": "source/oem-rootfs-scripts/etc/init.d/S50Wireless",
+      "bytes": 2391,
+      "sha256": "07e00707bd7a0e8367560b807563dd1eac523c7535549c2ef5d5bbe545c35c9c"
+    },
+    {
+      "path": "source/oem-rootfs-scripts/etc/init.d/S55qwe",
+      "bytes": 2153,
+      "sha256": "3221372edf4640c6c9b19a926a72d77586c887d82a15e53eb6f53d3f4638457b"
+    },
+    {
+      "path": "source/oem-rootfs-scripts/etc/init.d/S55rpc",
+      "bytes": 2023,
+      "sha256": "a8d89cef87aba5953a15ec10493dd8562c5a47110d37ba66e96de606409c4d8e"
+    },
+    {
+      "path": "source/oem-rootfs-scripts/etc/init.d/S60CCC",
+      "bytes": 358,
+      "sha256": "000d1b0a3e069ece39c85ebe8590eed5921a93079b5e006d3c713e1341834226"
+    },
+    {
+      "path": "source/oem-rootfs-scripts/etc/init.d/S60debug",
+      "bytes": 79,
+      "sha256": "b188f589b0b0eff719d3c4d4215a641c245aa6acc80d0b9f4e2eecc964a61c33"
+    },
+    {
+      "path": "source/oem-rootfs-scripts/etc/init.d/S70monitor_temperature",
+      "bytes": 1119,
+      "sha256": "8a785be581ef2646c111badcbfea3160ed0b8e9b4843282ec3deb604b2336530"
+    },
+    {
+      "path": "source/oem-rootfs-scripts/etc/init.d/S80switch_ctrl",
+      "bytes": 1425,
+      "sha256": "9d52bef1af6f2fa25b65ae30fe9cc5e0309a90d7db180af3031cdc9d7a4a0cf0"
+    },
+    {
+      "path": "source/oem-rootfs-scripts/etc/init.d/S90maui",
+      "bytes": 1354,
+      "sha256": "705915a9abd8fcc5c7650dcf2c2d614103a02920190cadddf0963ac7190262c8"
+    },
+    {
+      "path": "source/oem-rootfs-scripts/etc/init.d/S92httpd",
+      "bytes": 1500,
+      "sha256": "c8947351fe0a71c7734015144779a52e89bf20cd39fb3630479ec66b55ac5b5a"
+    },
+    {
+      "path": "source/oem-rootfs-scripts/etc/init.d/rcS",
+      "bytes": 1728,
+      "sha256": "bb9b0a9ec9db5a4654a90e1dfce1eed96457795f4acd93ff24cf16575ca69ed6"
+    },
+    {
+      "path": "source/oem-rootfs-scripts/etc/inittab",
+      "bytes": 1786,
+      "sha256": "d1cebc58ad61292be9d010ec76b3dc5fbf0c81b79931092db8431cce6222aa99"
+    },
+    {
+      "path": "source/reference-gpl/common/ruby_platform.h",
+      "bytes": 40298,
+      "sha256": "d878ff34eff510110994cea174c1a216413bc774cbeaba2d27f23e7f778d1e64"
+    },
+    {
+      "path": "source/reference-gpl/common/ruby_spi_flash_data.h",
+      "bytes": 6854,
+      "sha256": "c590f8496c98678fd97e2043052a2c7135aac5c747f1c9f4e9b7fece715b18af"
+    },
+    {
+      "path": "source/reference-gpl/common/topaz_config.h",
+      "bytes": 3682,
+      "sha256": "3cbd988a2bf1324b8c8b6c2bc313c917f1ba3fd56673cc87e73cf00863e93e73"
+    },
+    {
+      "path": "source/reference-gpl/common/topaz_platform.h",
+      "bytes": 22782,
+      "sha256": "71e18f2d6a7149a638ccc0eea372944898a46506f616d28febeb671a920f881a"
+    },
+    {
+      "path": "source/reference-gpl/common/topaz_reset.h",
+      "bytes": 2798,
+      "sha256": "367f233ca158b71b702ca6517cdda0ac33e6ca4d9a08fb8268dafd4b31682dbb"
+    },
+    {
+      "path": "source/reference-gpl/drivers/ruby/platform.h",
+      "bytes": 1053,
+      "sha256": "fceb326fe85f4983536cefad50bf56fd45124cdff92a87520471161509ea43c4"
+    },
+    {
+      "path": "source/reference-gpl/drivers/ruby/spi_flash.c",
+      "bytes": 23244,
+      "sha256": "695f34eabe21751495e2923c059561af9544ff66ecbda874ad826d3e3dc6d492"
+    },
+    {
+      "path": "source/reference-gpl/drivers/topaz/Kconfig",
+      "bytes": 908,
+      "sha256": "9f78bbdedef535a18bada6ba0f5b712182bd25f87ac3a570ab330b7147c6732d"
+    },
+    {
+      "path": "source/reference-gpl/drivers/topaz/Makefile",
+      "bytes": 1795,
+      "sha256": "c43a735cf07c08c4c7b8c332b14dbc995292c2b538487f36159d275294e489be"
+    },
+    {
+      "path": "source/reference-gpl/drivers/topaz/amber.c",
+      "bytes": 10858,
+      "sha256": "6674f9be8a870210a962d7805a600fe51f9e49d61ee54c0ee76e1d242b04a936"
+    },
+    {
+      "path": "source/reference-gpl/drivers/topaz/busmon.c",
+      "bytes": 13143,
+      "sha256": "0d76c98c0ce12ab6e90b114b56d6f16875baf1f1f1a6a4bf0df44bd16e74a3f6"
+    },
+    {
+      "path": "source/reference-gpl/drivers/topaz/dpi.c",
+      "bytes": 18839,
+      "sha256": "e4ce669990f3e6dc63a9959d5e776f09b64b81ffb74d9354bb315823c9a5b127"
+    },
+    {
+      "path": "source/reference-gpl/drivers/topaz/fwt_if.c",
+      "bytes": 18095,
+      "sha256": "100a604f645237c5f0f21ad18733d02cdfbf468f1d033ea0ce98585797b821f0"
+    },
+    {
+      "path": "source/reference-gpl/drivers/topaz/hbm.c",
+      "bytes": 33761,
+      "sha256": "1db8fedea667e8728321c6e8de758943d35c0d978e7a93b72bf66a4eba8d7c22"
+    },
+    {
+      "path": "source/reference-gpl/drivers/topaz/switch_emac.c",
+      "bytes": 37682,
+      "sha256": "4fb54cbed7f2b5e49687f9ecc0178f834fe437b874ff3b976dbc3ee893cf3677"
+    },
+    {
+      "path": "source/reference-gpl/drivers/topaz/switch_tqe.c",
+      "bytes": 37679,
+      "sha256": "807b5d411e9775cbea11d72c13188f3ca189f4ccf192b8f3f52aaf45882555fd"
+    },
+    {
+      "path": "source/reference-gpl/drivers/topaz/switch_vlan.c",
+      "bytes": 19662,
+      "sha256": "2d92c06e6c969e8197deb3fe2f4cc7c6fa2626f2ee22cc36d216191e59feed68"
+    },
+    {
+      "path": "source/reference-gpl/drivers/topaz/temp_sens.c",
+      "bytes": 3825,
+      "sha256": "ef542efef64406330610e6b504082dea4e2692e4f87041fe3d35cac3879bee41"
+    },
+    {
+      "path": "source/reference-gpl/drivers/topaz/topaz_congest_queue.c",
+      "bytes": 10280,
+      "sha256": "aa5ca9bf09669cac09b8a0d0eabc20e8bf568da3667ac12612a0fac562c6f16f"
+    },
+    {
+      "path": "source/reference-gpl/drivers/topaz/topaz_test.h",
+      "bytes": 2492,
+      "sha256": "79f0eea53f8be78787ec63725226bc3abe7fdfe24612ef4a54294e2665f2e228"
+    },
+    {
+      "path": "source/reference-gpl/drivers/topaz/tqe.c",
+      "bytes": 2367,
+      "sha256": "2f4ed67a131c2b20a2a04ef41f5c0761fe79f511910b2dcb61e72045725f718b"
+    },
+    {
+      "path": "tools/export_rea_metadata.py",
+      "bytes": 2299,
+      "sha256": "b0d8874cf3100237f1ba4ff6eddf236efc795ca0355f4a091916fb894d0fab4e"
+    },
+    {
+      "path": "tools/extract_oem_scripts.py",
+      "bytes": 3463,
+      "sha256": "d26e7a75d34a3a03a790f8d32cd26edcd4a3a8a507fef7014df0878ce9c9240e"
+    },
+    {
+      "path": "tools/inspect_ras.py",
+      "bytes": 6378,
+      "sha256": "624a12fb8f953f3c1b9884f6ecbfcba8d538c0468fd4a1ebe88050143e90cf94"
+    },
+    {
+      "path": "tools/run_rea.py",
+      "bytes": 2855,
+      "sha256": "b6428fcaadf41b4fb5491dc5eb2456bbcd8493caf77aa88047025e0797d6a69c"
+    },
+    {
+      "path": "tools/verify_public_export.py",
+      "bytes": 612,
+      "sha256": "a6e93c83fe924f71c3a7597e3da723ab7df3da945daa9aca1c8515ca0dbab096"
+    },
+    {
+      "path": "tools/verify_repository.py",
+      "bytes": 1067,
+      "sha256": "c5a9668288a6996f5e8888187512c02de1a7d8aa703fb755ad1858d191b5f78e"
+    }
+  ],
+  "actions_enabled": false,
+  "submodule_scope": "Public project dependencies are navigational snapshots, not the historical release pins.",
+  "public_submodules": []
+}

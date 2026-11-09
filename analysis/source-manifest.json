@@ -1,0 +1,261 @@
+{
+  "schema": "openmitrastar.readable-source-export/v1",
+  "date": "2026-11-03",
+  "files": [
+    {
+      "path": "source/reference-gpl/common/topaz_reset.h",
+      "bytes": 2798,
+      "sha256": "367f233ca158b71b702ca6517cdda0ac33e6ca4d9a08fb8268dafd4b31682dbb",
+      "origin": "Quantenna-GPL@116a8b0cd80d75e6bc3b8d21646f9c7fa4ce1cf9/common/topaz_reset.h"
+    },
+    {
+      "path": "source/reference-gpl/common/topaz_platform.h",
+      "bytes": 22782,
+      "sha256": "71e18f2d6a7149a638ccc0eea372944898a46506f616d28febeb671a920f881a",
+      "origin": "Quantenna-GPL@116a8b0cd80d75e6bc3b8d21646f9c7fa4ce1cf9/common/topaz_platform.h"
+    },
+    {
+      "path": "source/reference-gpl/common/topaz_config.h",
+      "bytes": 3682,
+      "sha256": "3cbd988a2bf1324b8c8b6c2bc313c917f1ba3fd56673cc87e73cf00863e93e73",
+      "origin": "Quantenna-GPL@116a8b0cd80d75e6bc3b8d21646f9c7fa4ce1cf9/common/topaz_config.h"
+    },
+    {
+      "path": "source/reference-gpl/common/ruby_spi_flash_data.h",
+      "bytes": 6854,
+      "sha256": "c590f8496c98678fd97e2043052a2c7135aac5c747f1c9f4e9b7fece715b18af",
+      "origin": "Quantenna-GPL@116a8b0cd80d75e6bc3b8d21646f9c7fa4ce1cf9/common/ruby_spi_flash_data.h"
+    },
+    {
+      "path": "source/reference-gpl/common/ruby_platform.h",
+      "bytes": 40298,
+      "sha256": "d878ff34eff510110994cea174c1a216413bc774cbeaba2d27f23e7f778d1e64",
+      "origin": "Quantenna-GPL@116a8b0cd80d75e6bc3b8d21646f9c7fa4ce1cf9/common/ruby_platform.h"
+    },
+    {
+      "path": "source/reference-gpl/drivers/ruby/spi_flash.c",
+      "bytes": 23244,
+      "sha256": "695f34eabe21751495e2923c059561af9544ff66ecbda874ad826d3e3dc6d492",
+      "origin": "Quantenna-GPL@116a8b0cd80d75e6bc3b8d21646f9c7fa4ce1cf9/drivers/ruby/spi_flash.c"
+    },
+    {
+      "path": "source/reference-gpl/drivers/ruby/platform.h",
+      "bytes": 1053,
+      "sha256": "fceb326fe85f4983536cefad50bf56fd45124cdff92a87520471161509ea43c4",
+      "origin": "Quantenna-GPL@116a8b0cd80d75e6bc3b8d21646f9c7fa4ce1cf9/drivers/ruby/platform.h"
+    },
+    {
+      "path": "source/reference-gpl/drivers/topaz/amber.c",
+      "bytes": 10858,
+      "sha256": "6674f9be8a870210a962d7805a600fe51f9e49d61ee54c0ee76e1d242b04a936",
+      "origin": "Quantenna-GPL@116a8b0cd80d75e6bc3b8d21646f9c7fa4ce1cf9/drivers/topaz/amber.c"
+    },
+    {
+      "path": "source/reference-gpl/drivers/topaz/busmon.c",
+      "bytes": 13143,
+      "sha256": "0d76c98c0ce12ab6e90b114b56d6f16875baf1f1f1a6a4bf0df44bd16e74a3f6",
+      "origin": "Quantenna-GPL@116a8b0cd80d75e6bc3b8d21646f9c7fa4ce1cf9/drivers/topaz/busmon.c"
+    },
+    {
+      "path": "source/reference-gpl/drivers/topaz/dpi.c",
+      "bytes": 18839,
+      "sha256": "e4ce669990f3e6dc63a9959d5e776f09b64b81ffb74d9354bb315823c9a5b127",
+      "origin": "Quantenna-GPL@116a8b0cd80d75e6bc3b8d21646f9c7fa4ce1cf9/drivers/topaz/dpi.c"
+    },
+    {
+      "path": "source/reference-gpl/drivers/topaz/fwt_if.c",
+      "bytes": 18095,
+      "sha256": "100a604f645237c5f0f21ad18733d02cdfbf468f1d033ea0ce98585797b821f0",
+      "origin": "Quantenna-GPL@116a8b0cd80d75e6bc3b8d21646f9c7fa4ce1cf9/drivers/topaz/fwt_if.c"
+    },
+    {
+      "path": "source/reference-gpl/drivers/topaz/hbm.c",
+      "bytes": 33761,
+      "sha256": "1db8fedea667e8728321c6e8de758943d35c0d978e7a93b72bf66a4eba8d7c22",
+      "origin": "Quantenna-GPL@116a8b0cd80d75e6bc3b8d21646f9c7fa4ce1cf9/drivers/topaz/hbm.c"
+    },
+    {
+      "path": "source/reference-gpl/drivers/topaz/Kconfig",
+      "bytes": 908,
+      "sha256": "9f78bbdedef535a18bada6ba0f5b712182bd25f87ac3a570ab330b7147c6732d",
+      "origin": "Quantenna-GPL@116a8b0cd80d75e6bc3b8d21646f9c7fa4ce1cf9/drivers/topaz/Kconfig"
+    },
+    {
+      "path": "source/reference-gpl/drivers/topaz/Makefile",
+      "bytes": 1795,
+      "sha256": "c43a735cf07c08c4c7b8c332b14dbc995292c2b538487f36159d275294e489be",
+      "origin": "Quantenna-GPL@116a8b0cd80d75e6bc3b8d21646f9c7fa4ce1cf9/drivers/topaz/Makefile"
+    },
+    {
+      "path": "source/reference-gpl/drivers/topaz/switch_emac.c",
+      "bytes": 37682,
+      "sha256": "4fb54cbed7f2b5e49687f9ecc0178f834fe437b874ff3b976dbc3ee893cf3677",
+      "origin": "Quantenna-GPL@116a8b0cd80d75e6bc3b8d21646f9c7fa4ce1cf9/drivers/topaz/switch_emac.c"
+    },
+    {
+      "path": "source/reference-gpl/drivers/topaz/switch_tqe.c",
+      "bytes": 37679,
+      "sha256": "807b5d411e9775cbea11d72c13188f3ca189f4ccf192b8f3f52aaf45882555fd",
+      "origin": "Quantenna-GPL@116a8b0cd80d75e6bc3b8d21646f9c7fa4ce1cf9/drivers/topaz/switch_tqe.c"
+    },
+    {
+      "path": "source/reference-gpl/drivers/topaz/switch_vlan.c",
+      "bytes": 19662,
+      "sha256": "2d92c06e6c969e8197deb3fe2f4cc7c6fa2626f2ee22cc36d216191e59feed68",
+      "origin": "Quantenna-GPL@116a8b0cd80d75e6bc3b8d21646f9c7fa4ce1cf9/drivers/topaz/switch_vlan.c"
+    },
+    {
+      "path": "source/reference-gpl/drivers/topaz/temp_sens.c",
+      "bytes": 3825,
+      "sha256": "ef542efef64406330610e6b504082dea4e2692e4f87041fe3d35cac3879bee41",
+      "origin": "Quantenna-GPL@116a8b0cd80d75e6bc3b8d21646f9c7fa4ce1cf9/drivers/topaz/temp_sens.c"
+    },
+    {
+      "path": "source/reference-gpl/drivers/topaz/topaz_congest_queue.c",
+      "bytes": 10280,
+      "sha256": "aa5ca9bf09669cac09b8a0d0eabc20e8bf568da3667ac12612a0fac562c6f16f",
+      "origin": "Quantenna-GPL@116a8b0cd80d75e6bc3b8d21646f9c7fa4ce1cf9/drivers/topaz/topaz_congest_queue.c"
+    },
+    {
+      "path": "source/reference-gpl/drivers/topaz/topaz_test.h",
+      "bytes": 2492,
+      "sha256": "79f0eea53f8be78787ec63725226bc3abe7fdfe24612ef4a54294e2665f2e228",
+      "origin": "Quantenna-GPL@116a8b0cd80d75e6bc3b8d21646f9c7fa4ce1cf9/drivers/topaz/topaz_test.h"
+    },
+    {
+      "path": "source/reference-gpl/drivers/topaz/tqe.c",
+      "bytes": 2367,
+      "sha256": "2f4ed67a131c2b20a2a04ef41f5c0761fe79f511910b2dcb61e72045725f718b",
+      "origin": "Quantenna-GPL@116a8b0cd80d75e6bc3b8d21646f9c7fa4ce1cf9/drivers/topaz/tqe.c"
+    },
+    {
+      "path": "source/oem-rootfs-scripts/etc/inittab",
+      "bytes": 1786,
+      "sha256": "d1cebc58ad61292be9d010ec76b3dc5fbf0c81b79931092db8431cce6222aa99",
+      "origin": "OEM provider-webformat exact SquashFS member etc/inittab"
+    },
+    {
+      "path": "source/oem-rootfs-scripts/etc/init.d/S41qevt",
+      "bytes": 1301,
+      "sha256": "95cf8e51bcb186c2a2ad1a25ebe69db712a0bd62daf320dc83733aab754660ff",
+      "origin": "OEM provider-webformat exact SquashFS member etc/init.d/S41qevt"
+    },
+    {
+      "path": "source/oem-rootfs-scripts/etc/init.d/S60debug",
+      "bytes": 79,
+      "sha256": "b188f589b0b0eff719d3c4d4215a641c245aa6acc80d0b9f4e2eecc964a61c33",
+      "origin": "OEM provider-webformat exact SquashFS member etc/init.d/S60debug"
+    },
+    {
+      "path": "source/oem-rootfs-scripts/etc/init.d/S55qwe",
+      "bytes": 2153,
+      "sha256": "3221372edf4640c6c9b19a926a72d77586c887d82a15e53eb6f53d3f4638457b",
+      "origin": "OEM provider-webformat exact SquashFS member etc/init.d/S55qwe"
+    },
+    {
+      "path": "source/oem-rootfs-scripts/etc/init.d/S42inetd",
+      "bytes": 833,
+      "sha256": "6580ad5fa1e112084c6a7d765bbbcead9952d104f9de1db2f09ddcdbc13edff4",
+      "origin": "OEM provider-webformat exact SquashFS member etc/init.d/S42inetd"
+    },
+    {
+      "path": "source/oem-rootfs-scripts/etc/init.d/rcS",
+      "bytes": 1728,
+      "sha256": "bb9b0a9ec9db5a4654a90e1dfce1eed96457795f4acd93ff24cf16575ca69ed6",
+      "origin": "OEM provider-webformat exact SquashFS member etc/init.d/rcS"
+    },
+    {
+      "path": "source/oem-rootfs-scripts/etc/init.d/S30procsys",
+      "bytes": 1577,
+      "sha256": "71d037606bdc5af6f8a8df1c3afe68e787e3fd39799c02f187a0a086ed57ddf8",
+      "origin": "OEM provider-webformat exact SquashFS member etc/init.d/S30procsys"
+    },
+    {
+      "path": "source/oem-rootfs-scripts/etc/init.d/S80switch_ctrl",
+      "bytes": 1425,
+      "sha256": "9d52bef1af6f2fa25b65ae30fe9cc5e0309a90d7db180af3031cdc9d7a4a0cf0",
+      "origin": "OEM provider-webformat exact SquashFS member etc/init.d/S80switch_ctrl"
+    },
+    {
+      "path": "source/oem-rootfs-scripts/etc/init.d/S20urandom",
+      "bytes": 1365,
+      "sha256": "4cca0e403bf60cdb86e138a2e955a69832917cda4fa994903ad11a5e41129a36",
+      "origin": "OEM provider-webformat exact SquashFS member etc/init.d/S20urandom"
+    },
+    {
+      "path": "source/oem-rootfs-scripts/etc/init.d/S40jffs",
+      "bytes": 745,
+      "sha256": "1fc887f0b37d8ff2b201671326f6af2947408116a910e9122bf545c224ce119c",
+      "origin": "OEM provider-webformat exact SquashFS member etc/init.d/S40jffs"
+    },
+    {
+      "path": "source/oem-rootfs-scripts/etc/init.d/S39date",
+      "bytes": 31,
+      "sha256": "2c6f24e102b83d4ce253234ac3a777dd70d6271110fa0c3933e58c6f03201536",
+      "origin": "OEM provider-webformat exact SquashFS member etc/init.d/S39date"
+    },
+    {
+      "path": "source/oem-rootfs-scripts/etc/init.d/S09qproc_mon",
+      "bytes": 189,
+      "sha256": "78b4a782cc33498e8569a44c7d8f0bfc2ee167237910b1899121e3469cee1269",
+      "origin": "OEM provider-webformat exact SquashFS member etc/init.d/S09qproc_mon"
+    },
+    {
+      "path": "source/oem-rootfs-scripts/etc/init.d/S70monitor_temperature",
+      "bytes": 1119,
+      "sha256": "8a785be581ef2646c111badcbfea3160ed0b8e9b4843282ec3deb604b2336530",
+      "origin": "OEM provider-webformat exact SquashFS member etc/init.d/S70monitor_temperature"
+    },
+    {
+      "path": "source/oem-rootfs-scripts/etc/init.d/S92httpd",
+      "bytes": 1500,
+      "sha256": "c8947351fe0a71c7734015144779a52e89bf20cd39fb3630479ec66b55ac5b5a",
+      "origin": "OEM provider-webformat exact SquashFS member etc/init.d/S92httpd"
+    },
+    {
+      "path": "source/oem-rootfs-scripts/etc/init.d/S10coredump",
+      "bytes": 340,
+      "sha256": "e0081fed0896ec309ce661fc1a2c1d54104ab59c34c35acb044f8ac23995b3b1",
+      "origin": "OEM provider-webformat exact SquashFS member etc/init.d/S10coredump"
+    },
+    {
+      "path": "source/oem-rootfs-scripts/etc/init.d/S60CCC",
+      "bytes": 358,
+      "sha256": "000d1b0a3e069ece39c85ebe8590eed5921a93079b5e006d3c713e1341834226",
+      "origin": "OEM provider-webformat exact SquashFS member etc/init.d/S60CCC"
+    },
+    {
+      "path": "source/oem-rootfs-scripts/etc/init.d/S90maui",
+      "bytes": 1354,
+      "sha256": "705915a9abd8fcc5c7650dcf2c2d614103a02920190cadddf0963ac7190262c8",
+      "origin": "OEM provider-webformat exact SquashFS member etc/init.d/S90maui"
+    },
+    {
+      "path": "source/oem-rootfs-scripts/etc/init.d/S50PCIe",
+      "bytes": 1587,
+      "sha256": "def3e0c3e544e20a2fa6d36b9115b3251bc43ece7a03f7af84c007537b053c7b",
+      "origin": "OEM provider-webformat exact SquashFS member etc/init.d/S50PCIe"
+    },
+    {
+      "path": "source/oem-rootfs-scripts/etc/init.d/S50Wireless",
+      "bytes": 2391,
+      "sha256": "07e00707bd7a0e8367560b807563dd1eac523c7535549c2ef5d5bbe545c35c9c",
+      "origin": "OEM provider-webformat exact SquashFS member etc/init.d/S50Wireless"
+    },
+    {
+      "path": "source/oem-rootfs-scripts/etc/init.d/S55rpc",
+      "bytes": 2023,
+      "sha256": "a8d89cef87aba5953a15ec10493dd8562c5a47110d37ba66e96de606409c4d8e",
+      "origin": "OEM provider-webformat exact SquashFS member etc/init.d/S55rpc"
+    },
+    {
+      "path": "source/oem-kernel.config.sanitized",
+      "bytes": 27166,
+      "sha256": "38ceefd183703beb82e7f8de915082c19fd0febc89c5ee9b92a3ffd3ee4e9ea2",
+      "origin": "OEM kernel embedded gzip IKCONFIG",
+      "original_bytes": 27166,
+      "original_sha256": "38ceefd183703beb82e7f8de915082c19fd0febc89c5ee9b92a3ffd3ee4e9ea2",
+      "redacted_config_lines": 0
+    }
+  ]
+}

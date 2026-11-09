@@ -1,0 +1,15 @@
+#!/bin/sh
+export LD_LIBRARY_PATH='/lib:/usr/lib'
+echo "Starting /sbin/holdSet..."
+holdSet &
+echo "/sbin/holdSet already!"
+
+mkdir /var/rdm
+ln -snf /var/default-rdm/config.rdm /var/rdm/config.rdm
+ln -snf /etc/config.default.xml /mnt/ccc/config.default.xml
+if [ ! -e /mnt/ccc/config.xml ]
+then
+	cp /etc/config.default.xml /mnt/ccc/config.xml
+fi
+ccc_das_lite &
+

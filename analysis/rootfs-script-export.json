@@ -1,0 +1,8 @@
+{
+  "exact_script_files_exported": 20,
+  "files_omitted_by_private_content_filter": 1,
+  "script_contents_modified": false,
+  "rootfs_extractor": "unsquashfs 4.6.1, selected etc/init.d and etc/inittab only",
+  "raw_config_bytes": 27166,
+  "config_redacted_lines": 0
+}

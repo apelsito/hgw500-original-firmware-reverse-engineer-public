@@ -1,0 +1,57 @@
+#!/bin/sh
+
+uboot_updater=/etc/firmware/u-boot-mini-piggy.bin.update.sh
+if [ -e $uboot_updater ] ; then
+	sh $uboot_updater
+fi
+
+uboot_updater=/etc/firmware/u-boot.bin.update.sh
+if [ -e $uboot_updater ] ; then
+	sh $uboot_updater
+fi
+
+dev_mode=`/scripts/get_bootval dev_mode`
+if [ $dev_mode == "0" ]
+then
+	echo 1 > /proc/sys/kernel/panic
+else
+	echo 0 > /proc/sys/kernel/panic
+fi
+
+spi=`/scripts/parse_cmdline spi`
+if [ "${spi}" == "no" ]; then
+	# Setup flash-less system configuration files
+	/scripts/setup-nospi
+fi
+
+
+#__MSTC__, LingChun
+mstc_configure(){
+	export PATH=/bin:/sbin:/usr/bin:/usr/sbin:/scripts:/usr/local/bin
+	export LD_LIBRARY_PATH=/lib:/usr/lib
+
+	echo "Starting mstc_configure..."
+	
+	if [ -x /usr/sbin/sys ] ; then
+		DefaultSN=`get_bootval SerialNumber`
+		SN=`sys atsn show | awk {'print $1'}`	
+		if [ $? -eq 0 -a "${DefaultSN}" != "${SN}" ] ; then
+			echo "Preparing to reset the SerialNumber.."
+			set_bootval SerialNumber ${SN}	
+		fi		
+		DefaultEthaddr=`get_bootval ethaddr`
+		eth_addr=`sys atwz show 2>/dev/null | grep ^Ethernet* | sed -e 's/.*: //g' 2>/dev/null`
+		if [ $? -eq 0 -a "${DefaultEthaddr}" != "${eth_addr}" ] ; then	
+			echo "Preparing to set the MAC address of Ethernet ..."
+			set_bootval ethaddr ${eth_addr}
+		fi
+		DefaultWifiaddr=`get_bootval wifiaddr`
+		wifi_addr=`sys atwz show 2>/dev/null | grep ^WiFI5GHZ* | sed -e 's/.*: //g' 2>/dev/null`
+		if [ $? -eq 0 -a "${DefaultWifiaddr}" != "${wifi_addr}" ] ; then	
+			echo "Preparing to set the MAC address of 5GHz ..."
+			set_bootval wifiaddr ${wifi_addr}		
+		fi
+	fi
+}
+mstc_configure
+#__MSTC__, end

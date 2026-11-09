@@ -1,0 +1,74 @@
+#!/bin/sh
+
+export PATH=/bin:/sbin:/usr/bin:/usr/sbin:/scripts:/usr/local/bin
+export LD_LIBRARY_PATH=/lib:/usr/lib
+
+bootcfg_storefile=/env.img
+if [ -e $bootcfg_storefile ]; then
+	modprobe bootcfg store=$bootcfg_storefile
+else
+	modprobe bootcfg
+fi
+
+calstate=`get_bootval calstate`
+if [ $calstate == "0" ]; then
+	# calstate 0 - System with only serial console.
+	# No driver loading, no starting of daemons etc
+	echo "calstate is 0 (console only)"
+	exit 0
+fi
+
+# Start all init scripts in /etc/init.d
+# executing them in numerical order.
+#
+
+
+
+# __MSTC__, LingChun
+export PATH=$PATH:/scripts
+
+if [ -x /usr/sbin/sys ] ; then
+	basemac=`sys atsh 2>/dev/null | grep ^"MRD Basic MAC" | sed -e 's/.*: //g' 2>/dev/null`
+	if [ "${basemac}" = "" -o "${basemac}" = "FFFFFFFFFFFF" ] ; then	
+		echo "Preparing to reset the MRD.."
+		/usr/sbin/sys atsd
+	fi		
+	echo '' > /var/mrd	
+fi
+
+
+base_persistent_files_ccc="/mnt/ccc"
+if [ ! -f ${base_persistent_files_ccc}/wireless_conf.txt ]
+then
+    if [ ! -f /etc/default_config.txt ]
+    then
+        echo "staticip=0&maui=1&mode=ap&bw=80&region=es&channel=0&bf=1&pwr=19&scs=1&vsp=0&vht=1&band=11ac&mcs=0&leds=1&monitorreset=1&monitorrfenable=1&BTchange=0" > ${base_persistent_files_ccc}/wireless_conf.txt
+    else
+        cp /etc/default_config.txt ${base_persistent_files_ccc}/wireless_conf.txt
+    fi
+fi
+
+ln -snf /mnt/ccc/wireless_conf.txt /mnt/jffs2/wireless_conf.txt
+# __MSTC__, end
+
+
+for i in /etc/init.d/S??* ;do
+
+     # Ignore dangling symlinks (if any).
+     [ ! -f "$i" ] && continue
+
+     case "$i" in
+	*.sh)
+	    # Source shell script for speed.
+	    (
+		trap - INT QUIT TSTP
+		set start
+		. $i
+	    )
+	    ;;
+	*)
+	    # No sh extension, so fork subprocess.
+	    $i start
+	    ;;
+    esac
+done
